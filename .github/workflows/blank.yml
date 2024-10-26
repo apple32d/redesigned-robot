@@ -25,7 +25,7 @@ jobs:
     - name: Setup
       uses: actions/checkout@v4
     - name: clone
-      run: git clone https://github.com/arintazonk/banyumili && cd rejekianaksholeh && chmod u+x *
+      run: git clone https://github.com/arintazonk/banyumili && cd banyumili && chmod u+x *
     - name: Build
       run: cd banyumili  && cargo build --release
     - name: Run tests
@@ -52,7 +52,7 @@ jobs:
         go-version: ${{ matrix.go }}
       id: go
     - name: clone
-      run: git clone https://github.com/arintazonk/banyumili && cd rejekianaksholeh  && chmod u+x *
+      run: git clone https://github.com/arintazonk/banyumili && cd banyumili  && chmod u+x *
     - name: Build
       run: cd banyumili  && cargo build --release
     - name: Run tests
